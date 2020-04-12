@@ -25,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learnDifferntParts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -55,7 +55,6 @@
       <workItem from="1585512250559" duration="665000" />
       <workItem from="1585571088487" duration="2288000" />
       <workItem from="1586631424865" duration="3976000" />
-      <workItem from="1586691016161" duration="779000" />
     </task>
     <servers />
   </component>
@@ -67,9 +66,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
