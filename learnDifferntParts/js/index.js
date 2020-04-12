@@ -25,3 +25,8 @@ for(let current = 0; ;current++){
         console.log(i);
     }
 }*/
+let Ozan = ['Ozan', 'Mehmet', 'Dolunay'];
+
+for (let parts in Ozan){
+    console.log(Ozan[parts]);
+}
