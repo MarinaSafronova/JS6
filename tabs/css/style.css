@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.list-group ul li{
+    padding: 10px;
+    border: 2px solid darkgrey;
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.list-group ul{
+    list-style: none;
+}
+.tabs{
+    text-align: center;
+}
+.tabs h2{
+    text-transform: uppercase;
+}
+.list-header{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+.list-group-item{
+    border: 1px solid darkgrey;
+}
+.list-content{
+    padding: 20px 10px;
+    background-color: aquamarine;
+    color: black;
+    font-size: 18px;
+}
+.list-group{
+    max-width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+.tab-content{
+    display: none;
+}
