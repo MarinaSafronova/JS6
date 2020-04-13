@@ -1,8 +1,13 @@
 "use strict";
-let input = document.getElementById('text');
-let btn = document.getElementById('btn');
 
-btn.addEventListener('click', function(){
-    console.log(input.value);
+let headers = document.querySelectorAll('[data-name="accordeon-title"]');
+
+headers.forEach(function (item) {
+    item.addEventListener('click', headerClick);
 });
+
+function headerClick() {
+    this.nextElementSibling.classList.toggle('accordeon-body');
+}
+
 
