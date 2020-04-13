@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.accordeon{
+    text-align: center;
+}
+.accordeon h2{
+    text-transform: uppercase;
+}
+.list-header{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+.list-content{
+    padding: 20px 10px;
+    background-color: aquamarine;
+    color: black;
+    font-size: 18px;
+}
+.list-group{
+    max-width: 60%;
+    margin: 20px auto;
+    text-align: left;
+}
+.accordeon-body{
+    display: none;
+}
