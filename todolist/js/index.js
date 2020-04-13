@@ -1,8 +1,12 @@
 "use strict";
 let input = document.getElementById('text');
-let btn = document.getElementById('btn');
+let btnAdd = document.getElementById('btnAdd');
+let btnDelete = document.getElementById('btnDelete');
+let partLeft = document.querySelectorAll('left-part ul');
+let liFirst = document.createElement('li');
 
-btn.addEventListener('click', function(){
-    console.log(input.value);
+btnAdd.addEventListener('click', function(){
+    /*liFirst=input.value;
+    partLeft.appendChild(liFirst);*/
 });
 
