@@ -8,13 +8,31 @@ let id = 0;
 
 input.addEventListener('keyup', function(event){
     if(event.keyCode == 13){
-        const ToDO = input.value;
-        partLeft.innerHTML = `<li class="item">${ToDO.charAt(0).toUpperCase()+ ToDO.slice(1)} <input type="checkbox"></li><br>`;
+        const ToDO = input.value.charAt(0).toUpperCase() + input.value.slice(1);
         if(ToDO){
-            console.log(ToDo);
+            AddItem(ToDO);
+            list.push({
+                title: ToDO,
+                id: id,
+                done: false
+            });
+            id++;
+            console.log(list);
+        }else{
+            return false;
         }
     }
 });
+
+function AddItem(text) {
+    let ItemLi = document.createElement('li');
+    let ItemInput = document.createElement('input');
+    ItemInput.type = 'checkbox';
+    ItemLi.classList.add('item');
+    ItemLi.innerText = text;
+    ItemLi.appendChild(ItemInput);
+    partLeft.appendChild(ItemLi);
+};
 
 
 
