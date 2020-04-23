@@ -31,8 +31,8 @@ input.addEventListener('keyup', function(){
     if(event.keyCode == 13){
         const ToDO = input.value.charAt(0).toUpperCase() + input.value.slice(1);
         if(ToDO){
-            AddItem(ToDO);
             list.push({title: ToDO, id: id, done: false});
+            AddItem();
             id++;
         }else{
             return false;
@@ -41,25 +41,8 @@ input.addEventListener('keyup', function(){
     }
 });
 
-/*
-btnDelete.addEventListener('click', function(){
+//LocalStorage
 
-});
-*/
-
-function BindTask() {
-    const checkBox = document.querySelector('input[type=checkbox]');
-
-}
-/*
-function CompleteTask(chkBox) {
-    if (chkBox.checked) {
-        chkBox.className = "task completed";
-    } else {
-        /!*this.incompleteTask(i);*!/
-    }
-}
-*/
 
 
 
