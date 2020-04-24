@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db08c289-fa34-4ad0-9389-53645592fb59" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todotwo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -67,7 +66,8 @@
       <workItem from="1587452142335" duration="5262000" />
       <workItem from="1587475642315" duration="5917000" />
       <workItem from="1587582129840" duration="2333000" />
-      <workItem from="1587634317655" duration="6321000" />
+      <workItem from="1587634317655" duration="6797000" />
+      <workItem from="1587675206416" duration="10000" />
     </task>
     <servers />
   </component>
