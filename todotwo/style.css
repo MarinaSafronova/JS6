@@ -3,3 +3,11 @@
 	font-style: italic;
 	color: gray;
 }
+.form-check-label {
+	margin: 10px 20px;
+}
+.form-check-input {
+	position: absolute;
+	margin-top: 1rem;
+	margin-left: -1rem;
+}

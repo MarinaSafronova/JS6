@@ -2,7 +2,7 @@ const SelectAllbtn = document.getElementById('selectAllAction');
 const inputElelement = document.getElementById('input');
 const ulElement = document.getElementById('list');
 
-const todoList =[];
+let todoList =[];
 
 inputElelement.addEventListener('keydown', event => {
     if(event.key === "Enter" || event.keyCode === 13){
@@ -42,29 +42,37 @@ function upgradeView() {
         labelElement.className ="form-check-label";
         labelElement.setAttribute('for', 'todoItem' + index);
         labelElement.innerText = todoItem.content;
+
         if(todoItem.done){
             labelElement.classList.add('todoDone');
         }
+        if(!todoItem.done){
+            const buttonDoneElement = document.createElement('button');
+            divElement.append(buttonDoneElement);
+            buttonDoneElement.type = "button";
+            buttonDoneElement.className ="btn btn-outline-primary";
+            buttonDoneElement.innerText= 'Done';
 
-        const buttonDoneElement = document.createElement('button');
-        divElement.append(buttonDoneElement);
-        buttonDoneElement.type = "button";
-        buttonDoneElement.className ="btn btn-outline-primary";
-        buttonDoneElement.innerText= 'Done';
+            buttonDoneElement.addEventListener('click', ()=>{
+                todoItem.done = !todoItem.done;
+                upgradeView();
+            });
+        }else{
+            const buttonRemoveElement =document.createElement('button');
+            divElement.append(buttonRemoveElement);
+            buttonRemoveElement.type = "button";
+            buttonRemoveElement.className ="btn btn-outline-danger";
+            buttonRemoveElement.innerText= 'Remove';
+            buttonRemoveElement.addEventListener('click', ()=>{
+                todoList = todoList.filter(currentTodoItem => currentTodoItem!==todoItem);
+                upgradeView();
+            });
+        }
 
-        const buttonRemoveElement =document.createElement('button');
-        divElement.append(buttonRemoveElement);
-        buttonRemoveElement.type = "button";
-        buttonRemoveElement.className ="btn btn-outline-danger";
-        buttonRemoveElement.innerText= 'Remove';
-
-        buttonDoneElement.addEventListener('click', ()=>{
-            todoItem.done = !todoItem.done;
-            upgradeView();
-        });
         inputCheckbox.addEventListener('change', ()=>{
             todoItem.selected = inputCheckbox.checked;
         });
+
     }
 }
 
@@ -72,12 +80,29 @@ document.getElementById('doneAction').addEventListener('click', ()=>{
         for(const todoItem of todoList){
             if(todoItem.selected){
                 todoItem.done = true;
+                todoItem.selected = false;
             }
         }
+    upgradeView();
 });
 document.getElementById('restoreAction').addEventListener('click', ()=>{
-
+    for(const todoItem of todoList){
+        if(todoItem.selected){
+            todoItem.done = false;
+            todoItem.selected = false;
+        }
+    }
+    upgradeView();
 });
 document.getElementById('removeAction').addEventListener('click', ()=>{
-
+    todoList = todoList.filter(todoItem => !todoItem.selected);
+    upgradeView();
 });
+
+SelectAllbtn.addEventListener('click', ()=>{
+    for(const todoItem of todoList){
+        todoItem.selected = true;
+    }
+    upgradeView();
+});
+
