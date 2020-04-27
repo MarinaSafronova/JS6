@@ -9,10 +9,10 @@ const People =[
     {name: "Ozan", age: 17, budget: 5200}
 ];
 
-People.forEach(function(item, i, arr){
-   /* console.log(item);
+/*People.forEach(function(item, i, arr){
+   /!* console.log(item);
     console.log(i);
-    console.log(arr);*/
+    console.log(arr);*!/
 });
 
 const TwoMass = People.map(function (item) {
@@ -26,4 +26,13 @@ const AgeFilter = People.filter(function (item) {
         return true;
     }
 });
-console.log(AgeFilter);
+console.log(AgeFilter);*/
+
+const title = 'Hello';
+const isVisible = () => Math.random()>0.5;
+
+const template = `
+${isVisible() ? `<p>Visible</p>`:''}
+<h1 id='demo'>${title}</h1>
+    `;
+console.log(template);

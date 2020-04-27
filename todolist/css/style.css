@@ -3,15 +3,30 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100vh;
+    background: linear-gradient(to right, #ffec4f, #ff9fc7);
+}
 ul{
     max-width: 80%;
     margin: 0 auto;
     text-align: left;
 }
+ul li{
+    margin: 5px;
+}
 .todo{
     text-align: center;
 }
-
+h3{
+    margin: 20px auto;
+    font-size: 2rem;
+}
+#date-block{
+    margin: 20px auto;
+    font-size: 1.6rem;
+    color: #060d23;
+}
 .btn{
     color: #fff;
     text-transform: uppercase;
@@ -58,4 +73,9 @@ input[type="checkbox"]{
     width: 100%;
     min-height: 200px;
     height: auto;
+    background-color: white;
+}
+.li-done{
+    color: dimgrey;
+    text-decoration: line-through;
 }
