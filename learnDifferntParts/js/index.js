@@ -28,6 +28,7 @@ const AgeFilter = People.filter(function (item) {
 });
 console.log(AgeFilter);*/
 
+/*
 const title = 'Hello';
 const isVisible = () => Math.random()>0.5;
 
@@ -35,4 +36,18 @@ const template = `
 ${isVisible() ? `<p>Visible</p>`:''}
 <h1 id='demo'>${title}</h1>
     `;
-console.log(template);
+console.log(template);*/
+/*
+function Hello(){
+    console.log(this);
+}
+
+const Person = {
+    name: "Marina",
+    age: 29,
+    SayHello: Hello
+}
+*/
+console.log(5 + Number("5"));
+console.log(null + 2 );
+

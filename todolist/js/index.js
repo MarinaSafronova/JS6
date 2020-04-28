@@ -44,7 +44,7 @@ input.addEventListener('keyup', function(){
     if(event.keyCode == 13){
         const ToDO = input.value.charAt(0).toUpperCase() + input.value.slice(1);
         if(ToDO){
-            let item ={title: ToDO, id: id, done: false};
+            let item ={title: ToDO, id: id};
             list.unshift(item);
             AddItem(ToDO);
             id++;
@@ -60,7 +60,7 @@ btnDelete.addEventListener('click', function (e) {
     let Checked = document.querySelectorAll("input[type='checkbox']");
     Checked.forEach(function (item, index, arr) {
         if(item.checked){
-            partLeft.removeChild(item);
+            item.parentElement.remove();
         }
     });
 });
