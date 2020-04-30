@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db08c289-fa34-4ad0-9389-53645592fb59" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../randomuser/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../randomuser/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../randomuser/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../randomuser/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../randomuser/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../randomuser/js/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,7 +27,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../learnDifferntParts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../randomuser" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -73,6 +74,7 @@
       <workItem from="1587913186261" duration="4653000" />
       <workItem from="1587990355792" duration="8567000" />
       <workItem from="1588011706467" duration="559000" />
+      <workItem from="1588189594249" duration="37000" />
     </task>
     <servers />
   </component>

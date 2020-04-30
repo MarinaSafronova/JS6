@@ -1,0 +1,14 @@
+html,body{
+    color: #000000;
+}
+.table-users{
+    background-color: #d1eac9;
+    max-width: 80%;
+    margin: 10px auto;
+}
+.list-style{
+    margin: 10px auto;
+    border-radius: 8px;
+    border: 2px solid #060d23;
+    background-color: antiquewhite;
+}
