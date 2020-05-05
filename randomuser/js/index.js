@@ -22,7 +22,7 @@ function FuncResponse(data) {
 
 function CreateItem(item) {
     let DivTemplate = document.createElement("div");
-    DivTemplate.classList.add('list-style')
+    DivTemplate.classList.add('list-style');
     let Template = ` <div class="row justify-content-center">
                     <div class="col-lg-6 text-center">
                         <div class="UserImg">
